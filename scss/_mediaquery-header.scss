@@ -1,0 +1,19 @@
+@media screen and (max-width : 900px){
+    header{
+            h1{
+            .logo-texte{
+                top:-87px;
+                left:28%;
+            }
+            img{
+                width: 50px;
+                top: 5px;
+                left: 15%;
+            }
+            .login{
+                top: -130px;
+                left: 15%;
+            }
+        }
+    }
+}
