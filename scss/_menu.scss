@@ -1,0 +1,109 @@
+nav{
+    width: 100%;
+    background-color: rgb(185, 57, 32);
+    position: relative;
+    top: -21px;
+    ul{
+        margin: 0;
+        padding: 0;
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        li{
+            float: left;
+            position: relative;
+            &:hover{
+                a{
+                    padding: 10px 30px 15px 30px;
+                }
+            }
+            a{
+                padding:15px 30px;
+                color:white;
+            }
+        }
+    li{
+        list-style: none;
+        &:hover{
+            .submenu{
+                display:inline-block;
+                position: absolute;
+                top:100%;
+                left:0px;
+                padding: 0px;
+                z-index: 100000; 
+            }
+        }
+    a{
+        display: inline-block;
+        text-decoration: none;
+    }
+    }
+    }
+}
+
+.submenu{
+    display: none;
+    li{
+        border-bottom: 1px solid #CCC;
+        &:hover{
+            a{
+                color:#eee;
+                font-weight: bold;
+            }
+        }
+        a{
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: #eee;
+            width: 270px;
+        }
+    }
+}
+
+
+.menu-home:hover{
+    border-top: 5px solid green;
+    background-color: rgba(4, 110, 9, 0.247);
+}
+
+.menu-news:hover{
+    border-top: 5px solid green;
+    background-color: rgba(4, 110, 9, 0.247);
+}
+
+.menu-teams:hover{
+    border-top: 5px solid green;
+    background-color: rgba(4, 110, 9, 0.247);;
+}
+
+.menu-club:hover{
+    border-top: 5px solid green;
+    background-color: rgba(4, 110, 9, 0.247);
+}
+
+.menu-medias:hover{
+    border-top: 5px solid green;
+    background-color: rgba(4, 110, 9, 0.247);
+}
+
+.menu-contact:hover{
+    border-top: 5px solid green;
+    background-color: rgba(4, 110, 9, 0.247);;
+}
+
+.menu-teams .submenu{
+    background-color: rgb(185, 57, 32);
+    li:hover{
+        background-color: rgb(172, 47, 23);
+    }
+}
+
+.menu-club .submenu{
+    background-color: rgb(185, 57, 32);
+    li:hover{
+        background-color: rgb(172, 47, 23);
+    }
+}
